@@ -65,18 +65,9 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "ds_dynamic_filename",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename": {
-											"value": "@activity('Get Metadata child items').output.itemName",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								},
-								"fieldList": [
-									"lastModified",
-									"itemName"
-								],
+								"fieldList": [],
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
 									"enablePartitionDiscovery": false
