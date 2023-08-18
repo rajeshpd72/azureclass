@@ -1,0 +1,22 @@
+{
+	"name": "ds_dev_allfiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lnk_dev_blob_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "devfiles"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
